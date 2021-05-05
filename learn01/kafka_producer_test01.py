@@ -12,11 +12,3 @@ for i in range(3):
     producer.produce(topic, key=key, value=msg)
 
 producer.flush()
-
-value='test'
-print(value)
-value=value.encode("utf-8")
-print(value)
-print(type(value))
-value=value.decode("utf-8")
-print(value)
