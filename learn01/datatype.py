@@ -1,0 +1,45 @@
+# python number数据类型包含int  float  bool  complex 4种数据类型
+type_int = 1
+type_float = 0.1
+type_bool = True
+type_complex = complex(1, 1)
+print(type_int, type_float, type_bool, type_complex)
+type_string1 = "abc"
+type_string2 = 'abcd\''
+type_string3 ="""
+ 你好！
+    见到你很高兴。
+"""
+print(type_string1, type_string2, type_string3)
+type_list = [1, 2, 3, 4]
+type_tuple = ('abc', 'efg', "ddd")
+type_set = {"安徽", "北京"}
+type_dic = {"key1":"value1", "key2": "value2"}
+print(type_list, type_tuple, type_set, type_dic)
+
+if(len(type_list) > 2):
+    print(len(type_list))
+elif(len(type_list) > 1):
+    print(type_list)
+else:
+    print("else")
+
+for i in range(len(type_list)):
+    print(i, type_list[i])
+
+for k, v in enumerate(type_list):
+    print(k, v)
+
+for k, v in type_dic.items():
+    print(k, v)
+
+a = "abc"
+b = "def"
+c = a + b
+print(a, b, c)
+
+e = a * 2
+f = e[:2]
+print(e, f, f in e, f not in e, R'\n')
+
+print("my name is %s and age is %d!" % ('zhangsan', 20))
